@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Atelier Signature</title>
+<meta name="description" content="Donner forme à un projet. Parler à Atelier Signature.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Aller au contenu</a>
+<div class="reg-marks" aria-hidden="true"><span class="tl"></span><span class="tr"></span><span class="bl"></span><span class="br"></span></div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="index.html">ATELIER&nbsp;SIGNATURE</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav">
+      <span></span><span></span><span></span><span class="sr-only">Menu</span>
+    </button>
+    <nav class="site-nav" id="siteNav">
+      <a href="projects.html">Projects</a>
+      <a href="collection.html">Collection</a>
+      <a href="approach.html">Approach</a>
+      <a href="about.html">About</a>
+      <a class="nav-cta" href="contact.html" aria-current="page">Start a project</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="screen">
+    <div class="topo topo--corner" aria-hidden="true"></div>
+    <div class="screen-inner">
+      <p class="eyebrow">Contact</p>
+      <h1 class="screen-title" style="max-width:20ch">Donner forme à un projet.</h1>
+      <p class="screen-sub">Une idée, un espace, un objet ou simplement une problématique :
+        parlons de ce qu'il est possible de réaliser.</p>
+
+      <form class="form-grid" action="mailto:contact@studioaori.com" method="post" enctype="text/plain">
+        <div class="field">
+          <label for="name">Qui êtes-vous ?</label>
+          <input id="name" name="Nom" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="email">Comment vous répondre ?</label>
+          <input id="email" name="Email" type="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="type">Type de projet</label>
+          <select id="type" name="Type de projet">
+            <option>Scénographie</option>
+            <option>Retail</option>
+            <option>Hospitality</option>
+            <option>Objet</option>
+            <option>Mobilier</option>
+            <option>Autre</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="besoin">De quoi avez-vous besoin ?</label>
+          <select id="besoin" name="Besoin">
+            <option>Conception</option>
+            <option>Conception + Production</option>
+            <option>Production</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="lieu">Où ?</label>
+          <input id="lieu" name="Localisation" type="text">
+        </div>
+        <div class="field">
+          <label for="budget">Ordre de budget indicatif</label>
+          <input id="budget" name="Budget" type="text">
+        </div>
+        <div class="field">
+          <label for="calendrier">Calendrier envisagé</label>
+          <input id="calendrier" name="Calendrier" type="text">
+        </div>
+        <div class="field">
+          <label for="description">Parlez-nous du projet</label>
+          <textarea id="description" name="Description" rows="5"></textarea>
+        </div>
+        <button class="btn-solid" type="submit" style="justify-self:start; border:none; cursor:pointer">Parler à Atelier Signature</button>
+      </form>
+
+      <p class="form-note">Ce formulaire ouvre votre messagerie avec le message pré-rempli
+        — le site n'a pas encore de serveur de traitement des demandes (prototype MVP).
+        Vous pouvez aussi écrire directement à
+        <a class="btn" href="mailto:contact@studioaori.com" style="border:none">contact@studioaori.com</a>.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <p class="footer-mark">ATELIER SIGNATURE</p>
+      <p class="footer-thesis">Création × Savoir-faire × Production.<br>Une signature. Plusieurs mains.</p>
+    </div>
+    <nav class="footer-links" aria-label="Pied de page">
+      <a href="projects.html">Projects</a>
+      <a href="collection.html">Collection</a>
+      <a href="approach.html">Approach</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+  <p class="footer-meta center" style="max-width:var(--max-w)">Prototype MVP — contenu et visuels non définitifs.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
