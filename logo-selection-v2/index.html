@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Atelier Signature — étude comparative de 35 pistes de logotype et 70 mises en situation.">
+  <meta name="theme-color" content="#f2f0ea">
+  <title>Atelier Signature — Étude de logotype</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#selection">Aller à la sélection</a>
+
+  <header class="topbar">
+    <a class="brand" href="../" aria-label="Retour à Atelier Signature">Atelier Signature</a>
+    <p>Étude de logotype <span>01</span></p>
+    <button class="index-toggle" type="button" aria-controls="index" aria-expanded="false">Index</button>
+  </header>
+
+  <aside class="index" id="index" aria-hidden="true" aria-label="Index de la présentation">
+    <div class="index-head">
+      <p>Index</p>
+      <button class="index-close" type="button">Fermer</button>
+    </div>
+    <nav>
+      <a href="#intro"><span>00</span>Ouverture</a>
+      <a href="#selection"><span>01</span>35 propositions</a>
+      <a href="#applications"><span>02</span>70 applications</a>
+      <a href="#decision"><span>03</span>Sélection</a>
+    </nav>
+    <p class="index-meta">Document de travail<br>Lausanne · 2026</p>
+  </aside>
+
+  <main>
+    <section class="hero" id="intro">
+      <p class="hero-kicker">Direction & système de marque</p>
+      <h1><span>Atelier</span><span>Signature</span></h1>
+      <div class="hero-foot">
+        <p>Étude comparative<br>du signe et de sa matière.</p>
+        <p class="hero-count"><b>35</b> propositions<br><b>70</b> applications</p>
+        <a href="#selection">Voir la sélection <span>↓</span></a>
+      </div>
+    </section>
+
+    <section class="intro-statement">
+      <p class="label">00 / Intention</p>
+      <p class="statement">Observer chaque proposition à nu. Puis la confronter au papier, au relief et à la transparence.</p>
+      <p class="aside-copy">Cette phase ne cherche pas encore un vainqueur. Elle rend visibles les différences de présence, de proportion et de tenue.</p>
+    </section>
+
+    <section class="selection" id="selection">
+      <header class="section-title">
+        <p class="label">01 / Formes</p>
+        <h2>Les propositions</h2>
+        <p>7 planches · 35 pistes retenues</p>
+      </header>
+      <div class="raw-grid" id="rawGrid"></div>
+    </section>
+
+    <section class="applications" id="applications">
+      <header class="section-title">
+        <p class="label">02 / Épreuves</p>
+        <h2>Dans la matière</h2>
+        <p>Deux contextes par proposition</p>
+      </header>
+      <div class="filters" role="group" aria-label="Filtrer les planches">
+        <button class="is-active" type="button" data-filter="all">Tout <span>14</span></button>
+        <button type="button" data-filter="paper">Papier <span>07</span></button>
+        <button type="button" data-filter="material">Matière <span>07</span></button>
+      </div>
+      <div class="mockup-grid" id="mockupGrid"></div>
+    </section>
+
+    <section class="decision" id="decision">
+      <p class="label">03 / Suite</p>
+      <div>
+        <h2>Resserrer.</h2>
+        <p>Garder les formes qui restent justes, quel que soit leur support. Écarter celles dont le décor fait tout le travail.</p>
+      </div>
+      <a href="#selection">Revoir les propositions <span>↑</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Atelier Signature</p>
+    <p>Création avec<br>ceux qui fabriquent.</p>
+    <p>Logo Lab · 2026</p>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox">
+    <div class="lightbox-head">
+      <p></p>
+      <button type="button" class="lightbox-close" aria-label="Fermer">Fermer</button>
+    </div>
+    <figure><img alt=""><figcaption></figcaption></figure>
+    <div class="lightbox-nav">
+      <button type="button" class="lightbox-prev" aria-label="Image précédente">← Précédente</button>
+      <button type="button" class="lightbox-next" aria-label="Image suivante">Suivante →</button>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
