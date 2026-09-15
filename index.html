@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Atelier Signature — Versions</title>
+<title>Atelier Signature — Présentations</title>
 <style>
   :root { --paper:#e7e5de; --ink:#17181b; --stone:#8d887c; --oxide:#b5502c; }
   * { box-sizing: border-box; }
@@ -11,21 +11,29 @@
   .wrap { max-width: 46rem; margin: 0 auto; padding: 4rem 1.5rem 6rem; }
   h1 { font-size: clamp(1.8rem,5vw,2.6rem); margin: 0 0 0.5rem; letter-spacing:-0.01em; }
   .sub { color: var(--stone); margin: 0 0 3rem; font-size: 0.95rem; }
-  ul { list-style:none; padding:0; margin:0; border-top:1px solid rgba(23,24,27,0.16); }
+  ul { list-style:none; padding:0; margin:0 0 3rem; border-top:1px solid rgba(23,24,27,0.16); }
   li { border-bottom:1px solid rgba(23,24,27,0.16); }
   a { display:flex; justify-content:space-between; align-items:baseline; gap:1rem; padding: 1.1rem 0.2rem; text-decoration:none; color:var(--ink); }
   a:hover { color: var(--oxide); }
-  .v { font-family: "SF Mono", Menlo, monospace; font-size:0.8rem; color: var(--stone); }
+  .v { font-family: "SF Mono", Menlo, monospace; font-size:0.8rem; color: var(--stone); text-align:right; }
   .name { font-size:1.15rem; }
-  .current .name::after { content:" — actuelle"; font-size:0.75rem; color:var(--oxide); font-family:"SF Mono",Menlo,monospace; }
+  .featured { border-top-color:var(--oxide); }
+  .featured li { border-bottom-color:var(--oxide); }
+  .featured .name::after { content:" — nouveau"; font-size:0.7rem; color:var(--oxide); font-family:"SF Mono",Menlo,monospace; text-transform:uppercase; }
+  h2 { margin:0 0 .75rem; color:var(--stone); font:400 .72rem "SF Mono",Menlo,monospace; letter-spacing:.08em; text-transform:uppercase; }
 </style>
 </head>
 <body>
 <div class="wrap">
   <h1>Atelier Signature</h1>
-  <p class="sub">Historique des versions du prototype — hébergement permanent (GitHub Pages).</p>
+  <p class="sub">Présentations permanentes — hébergement GitHub Pages.</p>
+  <h2>Logo Lab</h2>
+  <ul class="featured">
+    <li><a href="logo-selection/"><span class="name">Logo Selection</span><span class="v">35 pistes · 70 applications</span></a></li>
+  </ul>
+  <h2>Prototype stratégique</h2>
   <ul>
-    <li class="current"><a href="v3-5/"><span class="name">V3.5</span><span class="v">passe art direction finale</span></a></li>
+    <li><a href="v3-5/"><span class="name">V3.5</span><span class="v">passe art direction finale</span></a></li>
     <li><a href="v3-4/"><span class="name">V3.4</span><span class="v">audit Drive + recomposition</span></a></li>
     <li><a href="v3-3/"><span class="name">V3.3</span><span class="v">diagrammes / information design</span></a></li>
     <li><a href="v3-2/"><span class="name">V3.2</span><span class="v">clarification business</span></a></li>
