@@ -81,11 +81,11 @@ const plate = ({src,title,ref,kind}) => {
 };
 
 selections.forEach(([codes,n]) => rawGrid.append(plate({
-  src:`assets/selection-${n}.webp`, title:codes, ref:`Planche ${n} / 07`, kind:'raw'
+  src:`../logo-selection/assets/selection-${n}.webp`, title:codes, ref:`Planche ${n} / 07`, kind:'raw'
 })));
 
 ['paper','material'].forEach(kind => selections.forEach(([codes,n]) => mockupGrid.append(plate({
-  src:`assets/${kind}-${n}.webp`, title:codes,
+  src:(kind === 'paper' && n === '06') ? 'assets/paper-06.webp' : `../logo-selection/assets/${kind}-${n}.webp`, title:codes,
   ref:`${kind === 'paper' ? 'Papier' : 'Matière'} ${n} / 07`, kind
 }))));
 
