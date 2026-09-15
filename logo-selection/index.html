@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Atelier Signature — étude comparative de 35 pistes de logotype et 70 mises en situation matérielles.">
+  <meta name="theme-color" content="#17181b">
+  <title>Atelier Signature — Logo Selection</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#selection">Aller à la sélection</a>
+  <div class="registration" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+  <header class="topbar">
+    <a class="brand" href="../">ATELIER SIGNATURE</a>
+    <nav aria-label="Navigation de la présentation">
+      <a href="#selection">35 pistes</a>
+      <a href="#applications">70 applications</a>
+      <button class="index-toggle" type="button" aria-controls="index" aria-expanded="false">Index +</button>
+    </nav>
+  </header>
+
+  <aside class="index" id="index" aria-hidden="true">
+    <button class="index-close" type="button">Fermer ×</button>
+    <p class="eyebrow">Index de travail — 2026</p>
+    <ol>
+      <li><a href="#intro"><span>00</span>Intention</a></li>
+      <li><a href="#selection"><span>01</span>Signes bruts</a></li>
+      <li><a href="#applications"><span>02</span>Papeterie</a></li>
+      <li><a href="#materials"><span>03</span>Matières</a></li>
+      <li><a href="#next"><span>04</span>Décision</a></li>
+    </ol>
+  </aside>
+
+  <main>
+    <section class="hero" id="intro">
+      <div class="hero-meta">
+        <p class="eyebrow">Logo Lab / Sélection 01</p>
+        <p class="counter">35 pistes · 70 applications</p>
+      </div>
+      <h1><span>Une signature.</span><br>Trente-cinq tensions.</h1>
+      <div class="hero-bottom">
+        <p class="lede">Une étude comparative, volontairement ouverte : observer le signe avant de choisir, puis vérifier sa tenue au contact du papier, du verre et de la matière.</p>
+        <p class="status">Document de travail<br>Direction artistique en cours</p>
+      </div>
+      <a class="scroll" href="#selection">Parcourir ↓</a>
+    </section>
+
+    <section class="manifesto">
+      <p class="section-no">00 — Principe</p>
+      <blockquote>Le projet n’est pas un concours de symboles. Il s’agit de trouver une forme capable de devenir <em>matière, détail et présence</em>.</blockquote>
+      <div class="principles">
+        <p><b>01</b> Précision suisse</p>
+        <p><b>02</b> Silence éditorial</p>
+        <p><b>03</b> Luxe matériel</p>
+        <p><b>04</b> Autorité calme</p>
+      </div>
+    </section>
+
+    <section class="plates" id="selection">
+      <header class="section-head">
+        <div><p class="section-no">01 — Sélection brute</p><h2>35 signes retenus</h2></div>
+        <p>Sept planches, cinq pistes par planche. Le signe est présenté sans décor pour préserver la justesse du jugement.</p>
+      </header>
+      <div class="raw-grid" id="rawGrid"></div>
+    </section>
+
+    <section class="applications" id="applications">
+      <header class="section-head section-head--dark">
+        <div><p class="section-no">02 — Mise en situation</p><h2>Le signe à l’épreuve</h2></div>
+        <p>Deux projections par piste. La matière révèle l’échelle, la respiration et la capacité de chaque dessin à exister au-delà de l’écran.</p>
+      </header>
+
+      <div class="filters" role="group" aria-label="Filtrer les planches">
+        <button class="is-active" type="button" data-filter="all">Toutes <span>14</span></button>
+        <button type="button" data-filter="paper">Papeterie <span>07</span></button>
+        <button type="button" data-filter="material">Matières <span>07</span></button>
+      </div>
+
+      <div class="mockup-grid" id="mockupGrid"></div>
+    </section>
+
+    <section class="material-note" id="materials">
+      <div>
+        <p class="section-no">03 — Matières</p>
+        <h2>Vergé. Fumé.<br>Or. Relief.</h2>
+      </div>
+      <p>Le territoire d’Atelier Signature n’est ni démonstratif ni décoratif. Les finitions sont utilisées comme des contraintes de dessin : gaufrage discret, dorure champagne, plexiglas fumé, gravure nette et papiers tactiles.</p>
+    </section>
+
+    <section class="decision" id="next">
+      <p class="section-no">04 — Prochaine décision</p>
+      <h2>Resserrer sans appauvrir.</h2>
+      <p>Cette présentation ne désigne pas encore un vainqueur. Elle permet de comparer les formes, d’identifier les familles qui tiennent vraiment et de sélectionner les pistes à reconstruire avec exigence.</p>
+      <a href="#selection">Revoir les 35 pistes ↑</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>ATELIER SIGNATURE</p>
+    <p class="footer-thesis">Création × Savoir-faire × Production</p>
+    <p>Logo Lab · CH · 2026<br>Document de travail</p>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox">
+    <button type="button" class="lightbox-close" aria-label="Fermer">×</button>
+    <button type="button" class="lightbox-prev" aria-label="Image précédente">←</button>
+    <figure><img alt=""><figcaption></figcaption></figure>
+    <button type="button" class="lightbox-next" aria-label="Image suivante">→</button>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
