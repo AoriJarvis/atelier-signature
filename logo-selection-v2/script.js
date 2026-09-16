@@ -47,7 +47,6 @@ const families = [
   }
 ];
 
-const rawGrid = document.querySelector('#rawGrid');
 const mockupGrid = document.querySelector('#mockupGrid');
 const familyList = document.querySelector('#familyList');
 
@@ -80,12 +79,8 @@ const plate = ({src,title,ref,kind}) => {
   return article;
 };
 
-selections.forEach(([codes,n]) => rawGrid.append(plate({
-  src:`../logo-selection/assets/selection-${n}.webp`, title:codes, ref:`Planche ${n} / 07`, kind:'raw'
-})));
-
 ['paper','material'].forEach(kind => selections.forEach(([codes,n]) => mockupGrid.append(plate({
-  src:(kind === 'paper' && n === '06') ? 'assets/paper-06.webp' : `../logo-selection/assets/${kind}-${n}.webp`, title:codes,
+  src:`assets/mockups-clean/${kind}-${n}.webp`, title:codes,
   ref:`${kind === 'paper' ? 'Papier' : 'Matière'} ${n} / 07`, kind
 }))));
 
@@ -119,7 +114,7 @@ let views = [];
 let current = 0;
 
 const galleryFor = trigger => {
-  const container = trigger.closest('#rawGrid') || trigger.closest('#mockupGrid');
+  const container = trigger.closest('#mockupGrid');
   return [...container.querySelectorAll('[data-view]')].filter(item => !item.closest('[hidden]'));
 };
 const show = next => {
