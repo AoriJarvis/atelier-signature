@@ -3,113 +3,102 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Atelier Signature — étude comparative de 35 pistes de logotype et 70 mises en situation matérielles.">
-  <meta name="theme-color" content="#17181b">
-  <title>Atelier Signature — Logo Selection</title>
+  <meta name="description" content="Atelier Signature — étude comparative de 35 pistes de logotype et 70 mises en situation.">
+  <meta name="theme-color" content="#f2f0ea">
+  <title>Atelier Signature — Étude de logotype</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip" href="#selection">Aller à la sélection</a>
-  <div class="registration" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  <a class="skip" href="#concepts">Aller aux territoires</a>
 
   <header class="topbar">
-    <a class="brand" href="../">ATELIER SIGNATURE</a>
-    <nav aria-label="Navigation de la présentation">
-      <a href="#selection">35 pistes</a>
-      <a href="#applications">70 applications</a>
-      <button class="index-toggle" type="button" aria-controls="index" aria-expanded="false">Index +</button>
-    </nav>
+    <a class="brand" href="../" aria-label="Retour à Atelier Signature">Atelier Signature</a>
+    <p>Étude de logotype <span>01</span></p>
+    <button class="index-toggle" type="button" aria-controls="index" aria-expanded="false">Index</button>
   </header>
 
-  <aside class="index" id="index" aria-hidden="true">
-    <button class="index-close" type="button">Fermer ×</button>
-    <p class="eyebrow">Index de travail — 2026</p>
-    <ol>
-      <li><a href="#intro"><span>00</span>Intention</a></li>
-      <li><a href="#selection"><span>01</span>Signes bruts</a></li>
-      <li><a href="#applications"><span>02</span>Papeterie</a></li>
-      <li><a href="#materials"><span>03</span>Matières</a></li>
-      <li><a href="#next"><span>04</span>Décision</a></li>
-    </ol>
+  <aside class="index" id="index" aria-hidden="true" aria-label="Index de la présentation">
+    <div class="index-head">
+      <p>Index</p>
+      <button class="index-close" type="button">Fermer</button>
+    </div>
+    <nav>
+      <a href="#intro"><span>00</span>Ouverture</a>
+      <a href="#concepts"><span>01</span>6 familles</a>
+      <a href="#applications"><span>02</span>70 applications</a>
+      <a href="#decision"><span>03</span>Sélection</a>
+    </nav>
+    <p class="index-meta">Document de travail<br>Lausanne · 2026</p>
   </aside>
 
   <main>
     <section class="hero" id="intro">
-      <div class="hero-meta">
-        <p class="eyebrow">Logo Lab / Sélection 01</p>
-        <p class="counter">35 pistes · 70 applications</p>
-      </div>
-      <h1><span>Une signature.</span><br>Trente-cinq tensions.</h1>
-      <div class="hero-bottom">
-        <p class="lede">Une étude comparative, volontairement ouverte : observer le signe avant de choisir, puis vérifier sa tenue au contact du papier, du verre et de la matière.</p>
-        <p class="status">Document de travail<br>Direction artistique en cours</p>
-      </div>
-      <a class="scroll" href="#selection">Parcourir ↓</a>
-    </section>
-
-    <section class="manifesto">
-      <p class="section-no">00 — Principe</p>
-      <blockquote>Le projet n’est pas un concours de symboles. Il s’agit de trouver une forme capable de devenir <em>matière, détail et présence</em>.</blockquote>
-      <div class="principles">
-        <p><b>01</b> Précision suisse</p>
-        <p><b>02</b> Silence éditorial</p>
-        <p><b>03</b> Luxe matériel</p>
-        <p><b>04</b> Autorité calme</p>
+      <p class="hero-kicker">Direction & système de marque</p>
+      <h1><span>Atelier</span><span>Signature</span></h1>
+      <div class="hero-foot">
+        <p>Étude comparative<br>du signe et de sa matière.</p>
+        <p class="hero-count"><b>35</b> propositions<br><b>70</b> applications</p>
+        <a href="#concepts">Voir les territoires <span>↓</span></a>
       </div>
     </section>
 
-    <section class="plates" id="selection">
-      <header class="section-head">
-        <div><p class="section-no">01 — Sélection brute</p><h2>35 signes retenus</h2></div>
-        <p>Sept planches, cinq pistes par planche. Le signe est présenté sans décor pour préserver la justesse du jugement.</p>
+    <section class="intro-statement">
+      <p class="label">00 / Intention</p>
+      <p class="statement">Observer chaque proposition à nu. Puis la confronter au papier, au relief et à la transparence.</p>
+      <p class="aside-copy">Cette phase ne cherche pas encore un vainqueur. Elle rend visibles les différences de présence, de proportion et de tenue.</p>
+    </section>
+
+    <section class="concepts" id="concepts">
+      <header class="concepts-intro">
+        <p class="label">01 / Territoires</p>
+        <h2>Un atelier.<br>Six façons de signer.</h2>
+        <p>Les 35 propositions ne racontent pas 35 histoires différentes. Elles explorent six mécanismes capables d’exprimer la même promesse de marque.</p>
       </header>
-      <div class="raw-grid" id="rawGrid"></div>
+      <div class="family-list" id="familyList"></div>
     </section>
 
     <section class="applications" id="applications">
-      <header class="section-head section-head--dark">
-        <div><p class="section-no">02 — Mise en situation</p><h2>Le signe à l’épreuve</h2></div>
-        <p>Deux projections par piste. La matière révèle l’échelle, la respiration et la capacité de chaque dessin à exister au-delà de l’écran.</p>
+      <header class="section-title">
+        <p class="label">02 / Épreuves</p>
+        <h2>Dans la matière</h2>
+        <p>Deux contextes par proposition</p>
       </header>
-
       <div class="filters" role="group" aria-label="Filtrer les planches">
-        <button class="is-active" type="button" data-filter="all">Toutes <span>14</span></button>
-        <button type="button" data-filter="paper">Papeterie <span>07</span></button>
-        <button type="button" data-filter="material">Matières <span>07</span></button>
+        <button class="is-active" type="button" data-filter="all">Tout <span>14</span></button>
+        <button type="button" data-filter="paper">Papier <span>07</span></button>
+        <button type="button" data-filter="material">Matière <span>07</span></button>
       </div>
-
       <div class="mockup-grid" id="mockupGrid"></div>
     </section>
 
-    <section class="material-note" id="materials">
+    <section class="decision" id="decision">
+      <p class="label">03 / Suite</p>
       <div>
-        <p class="section-no">03 — Matières</p>
-        <h2>Vergé. Fumé.<br>Or. Relief.</h2>
+        <h2>Resserrer.</h2>
+        <p>Garder les formes qui restent justes, quel que soit leur support. Écarter celles dont le décor fait tout le travail.</p>
       </div>
-      <p>Le territoire d’Atelier Signature n’est ni démonstratif ni décoratif. Les finitions sont utilisées comme des contraintes de dessin : gaufrage discret, dorure champagne, plexiglas fumé, gravure nette et papiers tactiles.</p>
-    </section>
-
-    <section class="decision" id="next">
-      <p class="section-no">04 — Prochaine décision</p>
-      <h2>Resserrer sans appauvrir.</h2>
-      <p>Cette présentation ne désigne pas encore un vainqueur. Elle permet de comparer les formes, d’identifier les familles qui tiennent vraiment et de sélectionner les pistes à reconstruire avec exigence.</p>
-      <a href="#selection">Revoir les 35 pistes ↑</a>
+      <a href="#concepts">Revoir les territoires <span>↑</span></a>
     </section>
   </main>
 
   <footer>
-    <p>ATELIER SIGNATURE</p>
-    <p class="footer-thesis">Création × Savoir-faire × Production</p>
-    <p>Logo Lab · CH · 2026<br>Document de travail</p>
+    <p>Atelier Signature</p>
+    <p>Création avec<br>ceux qui fabriquent.</p>
+    <p>Logo Lab · 2026</p>
   </footer>
 
   <dialog class="lightbox" id="lightbox">
-    <button type="button" class="lightbox-close" aria-label="Fermer">×</button>
-    <button type="button" class="lightbox-prev" aria-label="Image précédente">←</button>
+    <div class="lightbox-head">
+      <p></p>
+      <button type="button" class="lightbox-close" aria-label="Fermer">Fermer</button>
+    </div>
     <figure><img alt=""><figcaption></figcaption></figure>
-    <button type="button" class="lightbox-next" aria-label="Image suivante">→</button>
+    <div class="lightbox-nav">
+      <button type="button" class="lightbox-prev" aria-label="Image précédente">← Précédente</button>
+      <button type="button" class="lightbox-next" aria-label="Image suivante">Suivante →</button>
+    </div>
   </dialog>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=4"></script>
 </body>
 </html>
