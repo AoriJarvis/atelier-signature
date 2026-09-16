@@ -10,5 +10,5 @@ function setIndex(open){
 }
 toggle?.addEventListener('click',()=>setIndex(true));
 closeButton?.addEventListener('click',()=>setIndex(false));
-panel?.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>setIndex(false)));
+panel?.addEventListener('click',event=>{if(event.target.closest('a'))setIndex(false)});
 document.addEventListener('keydown',event=>{if(event.key==='Escape')setIndex(false)});
