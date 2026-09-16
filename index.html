@@ -1,47 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Atelier Signature — Présentations</title>
-<style>
-  :root { --paper:#e7e5de; --ink:#17181b; --stone:#8d887c; --oxide:#b5502c; }
-  * { box-sizing: border-box; }
-  body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
-  .wrap { max-width: 46rem; margin: 0 auto; padding: 4rem 1.5rem 6rem; }
-  h1 { font-size: clamp(1.8rem,5vw,2.6rem); margin: 0 0 0.5rem; letter-spacing:-0.01em; }
-  .sub { color: var(--stone); margin: 0 0 3rem; font-size: 0.95rem; }
-  ul { list-style:none; padding:0; margin:0 0 3rem; border-top:1px solid rgba(23,24,27,0.16); }
-  li { border-bottom:1px solid rgba(23,24,27,0.16); }
-  a { display:flex; justify-content:space-between; align-items:baseline; gap:1rem; padding: 1.1rem 0.2rem; text-decoration:none; color:var(--ink); }
-  a:hover { color: var(--oxide); }
-  .v { font-family: "SF Mono", Menlo, monospace; font-size:0.8rem; color: var(--stone); text-align:right; }
-  .name { font-size:1.15rem; }
-  .featured { border-top-color:var(--oxide); }
-  .featured li { border-bottom-color:var(--oxide); }
-  .featured .name::after { content:" — nouveau"; font-size:0.7rem; color:var(--oxide); font-family:"SF Mono",Menlo,monospace; text-transform:uppercase; }
-  h2 { margin:0 0 .75rem; color:var(--stone); font:400 .72rem "SF Mono",Menlo,monospace; letter-spacing:.08em; text-transform:uppercase; }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Atelier Signature — présentation stratégique et étude de logotype.">
+  <title>Atelier Signature — Présentations</title>
+  <link rel="stylesheet" href="site.css?v=1">
 </head>
 <body>
-<div class="wrap">
-  <h1>Atelier Signature</h1>
-  <p class="sub">Présentations permanentes — hébergement GitHub Pages.</p>
-  <h2>Logo Lab</h2>
-  <ul class="featured">
-    <li><a href="logo-selection/"><span class="name">Logo Selection</span><span class="v">35 pistes · 70 applications</span></a></li>
-  </ul>
-  <h2>Prototype stratégique</h2>
-  <ul>
-    <li><a href="v3-5/"><span class="name">V3.5</span><span class="v">passe art direction finale</span></a></li>
-    <li><a href="v3-4/"><span class="name">V3.4</span><span class="v">audit Drive + recomposition</span></a></li>
-    <li><a href="v3-3/"><span class="name">V3.3</span><span class="v">diagrammes / information design</span></a></li>
-    <li><a href="v3-2/"><span class="name">V3.2</span><span class="v">clarification business</span></a></li>
-    <li><a href="v3-1/"><span class="name">V3.1</span><span class="v">présentation stratégique interne</span></a></li>
-    <li><a href="v3/"><span class="name">V3</span><span class="v">direction artistique blueprint</span></a></li>
-    <li><a href="v2/"><span class="name">V2</span><span class="v">simplification &amp; interaction</span></a></li>
-    <li><a href="v1/"><span class="name">V1</span><span class="v">premier prototype</span></a></li>
-  </ul>
-</div>
+  <a class="skip" href="#presentations">Voir les présentations</a>
+  <header class="topbar">
+    <a class="brand" href="./">Atelier Signature</a>
+    <p>Direction <span>&amp;</span> système de marque</p>
+    <p class="edition">Document de travail · 2026</p>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="title">
+      <p class="hero-kicker">Atelier Signature · Lausanne</p>
+      <h1 id="title"><span>Une vision.</span><span>Une forme.</span></h1>
+      <div class="hero-foot">
+        <p>Créer à partir<br>des savoir-faire.</p>
+        <p class="hero-count"><b>02</b><br>présentations</p>
+        <a href="#presentations">Entrer <span>↓</span></a>
+      </div>
+    </section>
+
+    <section class="statement" aria-labelledby="statement-title">
+      <p class="label">00 / Ensemble</p>
+      <h2 id="statement-title">Deux lectures.<br>Un même système.</h2>
+      <p>La stratégie définit ce qu’Atelier Signature construit. Le logotype recherche la forme capable de le porter.</p>
+    </section>
+
+    <section class="presentations" id="presentations" aria-labelledby="presentations-title">
+      <div class="section-head">
+        <p class="label">01 / Documents</p>
+        <h2 id="presentations-title">Choisir une lecture.</h2>
+        <p>Deux documents autonomes, réunis dans une même direction artistique.</p>
+      </div>
+
+      <div class="document-list">
+        <a class="document" href="strategy/">
+          <span class="document-number">01</span>
+          <span class="document-meta">Brand Core &amp; Business · V3.5</span>
+          <strong>Stratégie</strong>
+          <span class="document-copy">Vision, méthode, gouvernance, réseau, économie, risques et feuille de route.</span>
+          <span class="document-arrow">Ouvrir <b>↗</b></span>
+        </a>
+        <a class="document dark" href="logo-selection-v2/">
+          <span class="document-number">02</span>
+          <span class="document-meta">Logo Lab · Étude 01</span>
+          <strong>Logotypes</strong>
+          <span class="document-copy">Six territoires, trente-cinq propositions et soixante-dix mises en situation.</span>
+          <span class="document-arrow">Ouvrir <b>↗</b></span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Atelier Signature</p>
+    <p>Création × Savoir-faire × Production</p>
+    <p>Lausanne · 2026</p>
+  </footer>
 </body>
 </html>
