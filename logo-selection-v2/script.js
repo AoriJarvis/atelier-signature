@@ -43,7 +43,7 @@ const families = [
     id:'06', title:'Le repère contemporain',
     codes:['AO1','AR2','AS3','BA1'],
     value:'Clarté × système',
-    text:'Une écriture plus rationnelle et immédiatement reproductible relie les plans, les devis, le chantier et le digital. L’identité devient un outil commun, stable et lisible pour tous les interlocuteurs.'
+    text:'Une écriture plus rationnelle et immédiatement reproductible relie les plans, les devis, le chantier et les usages numériques. L’identité devient un outil commun, stable et lisible pour tous les interlocuteurs.'
   }
 ];
 
@@ -142,3 +142,4 @@ document.addEventListener('keydown', event => {
   if (event.key === 'ArrowLeft') show(current - 1);
   if (event.key === 'ArrowRight') show(current + 1);
 });
+
